@@ -1,0 +1,17 @@
+{
+    "name": "carli/sistema-de-controle-de-estacionamento",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Carli\\SistemaDeControleDeEstacionamento\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fujii",
+            "email": "josefujiicontato@gmail.com"
+        }
+    ],
+    "require": {}
+}
