@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Domain\Pricing;
 
 use App\Domain\Entity\Vehicle;

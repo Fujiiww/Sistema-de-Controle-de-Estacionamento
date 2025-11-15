@@ -1,4 +1,5 @@
-<?
+<?php 
+
 namespace App\Domain\Entity;
 
 use DateTime;
