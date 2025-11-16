@@ -13,4 +13,6 @@ interface VehicleRepositoryInterface
     public function update(Vehicle $vehicle): void;
     
     public function listAll(): array;
+    
+    public function delete(int $id): void;
 }

@@ -37,6 +37,12 @@ $vehicles = $service->listAll();
                 <td><?= $v->entryAt->format('d/m/Y H:i:s') ?></td>
                 <td><?= $v->exitAt ? $v->exitAt->format('d/m/Y H:i:s') : '-' ?></td>
                 <td>R$ <?= number_format($v->pricePaid, 2, ',', '.') ?></td>
+                <td>
+                    <a href="delete.php?id=<?= $v->id ?>" 
+                        onclick="return confirm('Tem certeza que deseja excluir?')">
+                        Excluir
+                    </a>
+                </td>
             </tr>
         <?php endforeach; ?>
     </tbody>

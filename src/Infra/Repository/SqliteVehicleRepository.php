@@ -81,7 +81,13 @@ class SqliteVehicleRepository implements VehicleRepositoryInterface
 
         return array_map([$this, 'toVehicle'], $rows);
     }
-
+    
+    public function delete(int $id): void
+    {
+        $stmt = $this->pdo->prepare("DELETE FROM vehicles WHERE id = :id");
+        $stmt->execute([':id' => $id]);
+    }
+    
     private function toVehicle(array $row): Vehicle
     {
         return new Vehicle(
@@ -93,4 +99,5 @@ class SqliteVehicleRepository implements VehicleRepositoryInterface
             pricePaid: (float) $row['price_paid']
         );
     }
+    
 }
