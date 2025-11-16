@@ -3,7 +3,7 @@
 require __DIR__ . '/../vendor/autoload.php';
 
 use App\Infra\Repository\SqliteVehicleRepository;
-use App\Application\Service\ParkingService;
+use App\Application\ParkingService;
 use App\Domain\Pricing\CarPricing;
 use App\Domain\Pricing\MotorcyclePricing;
 use App\Domain\Pricing\TruckPricing;

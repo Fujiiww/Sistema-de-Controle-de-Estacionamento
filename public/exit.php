@@ -26,6 +26,8 @@ if ($_SERVER['REQUEST_METHOD'] === "POST")
 
 <h1>Registrar Saída</h1>
 
+<p style="color: blue;"><?= $message ?></p>
+
 <form method="post">
     <label>
         Placa:
@@ -37,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST")
 </form>
 
 <br>
-<a href="index.php">Voltar para o início</a>
+<a href="index.php">Voltar</a>
 
 </body>
 </html>

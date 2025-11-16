@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Application\Service;
+namespace App\Application;
 
 use App\Domain\Entity\Vehicle;
 use App\Domain\Pricing\PricingInterface;
