@@ -68,4 +68,18 @@ class ParkingService
     {
         return $this->repo->listAll();
     }
+
+    public function getRevenue(): float
+    {
+        $vehicles = $this->repo->listAll();
+        $total = 0.0;
+
+        foreach ($vehicles as $vehicle) {
+            if ($vehicle->exitAt !== null) {
+                $total += $vehicle->pricePaid;
+            }
+        }
+
+        return $total;
+    }
 }

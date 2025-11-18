@@ -3,6 +3,7 @@
 require "init.php";
 
 $vehicles = $service->listAll();
+$revenue = $service->getRevenue();
 
 ?>
 
@@ -47,6 +48,18 @@ $vehicles = $service->listAll();
         <?php endforeach; ?>
     </tbody>
 </table>
+
+
+<br><hr><br>
+
+<h2>Faturamento Total</h2>
+
+<p>
+    Total arrecadado até agora: 
+    <strong style="font-size: 20px;">
+        R$ <?= number_format($revenue, 2, ',', '.') ?>
+    </strong>
+</p>
 
 <br>
 <a href="index.php">Voltar</a>
