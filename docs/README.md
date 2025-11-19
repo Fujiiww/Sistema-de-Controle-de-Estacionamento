@@ -20,19 +20,19 @@ Visualizar o faturamento total do estacionamento
 
 O projeto é dividido em camadas para manter clareza e boa organização:
 
-src/
- ├─ Domain/
- │   ├─ Entity/
- │   ├─ Pricing/
- │   ├─ Repository/
- │   └─ Validation/
- ├─ Application/
- │   └─ ParkingService.php
- └─ Infra/
-     └─ Repository/
-public/
-database/
-vendor/
+- src/
+  - Domain/
+    - Entity/
+    - Pricing/
+    - Repository/
+    - Validation/
+  - Application/
+    - ParkingService.php
+  - Infra/
+    - Repository/
+- public/
+- database/
+- vendor/
 
 Camadas:
 
@@ -151,3 +151,4 @@ C:\xampp\htdocs\Sistema-de-Controle-de-Estacionamento\
 4. No navegador, acesse:
 
 http://localhost/Sistema-de-Controle-de-Estacionamento/public
+
